@@ -36,3 +36,124 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* 
+moje
+*/
+
+body {
+  background-image: url(/myback.jpg);
+  background-size: 1600px;
+  background-repeat: no-repeat;
+}
+.LoginDiv{
+  background-image: url(/secondback.jpg);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  margin-left: 450px;
+  margin-top: 200px;
+  width: 500px;
+  height: 300px;
+  padding: 30px;
+}
+.header button{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+button:hover{
+  background-color: orange;
+}
+.proizvodiDiv{
+  display: flex;
+  flex-direction: row;
+ 
+  width: inherit;
+  border:2px solid black;
+  height:380px;
+  margin-top: 200px;
+  background-color: lightblue;
+}
+.jedanProizvodDiv{
+  width: 200px;
+  height: 330px;
+  margin:20px;
+  background-color: whitesmoke;
+}
+.jedanProizvodDiv h4{
+  margin-left: 40px;
+}
+.jedanProizvodDiv input{
+  width:80px;
+  margin-left: 45px;
+}
+.jedanProizvodDiv button{
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.brojacCart{
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  left:160px;
+  margin-top: -70px;
+}
+.brojacCart span{
+  margin-left: 8px;
+
+  position: absolute;
+  z-index: 1;
+ 
+}
+.jedanProizvodDiv h3{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+.slikaProizvod{
+  width: 180px;
+  margin:10px;
+  height: 100px;
+  background-color: red;
+}
+.slikaProizvod img {
+  width: 180px;
+  height: 100px;
+}
+.shopcartDiv{
+  background-image: url(/cart.png);
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  margin-left: 140px;
+  margin-top:-25px;
+  position: relative;
+}
+.izborbutton{
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 100px;
+  background-color: #61dafb;
+  color:white;
+}
+.header{
+  background-color: lightblue;
+  height:60px;
+  width: inherit;
+}
+.izborbutton:hover{
+  background-color: orange;
+}
+.LoginDiv h4{
+  margin-left: 200px;
+  margin-top: 30px;
+}
+.LoginDiv input{
+  border:2px solid black;
+  height: 20px;
+  margin-left: 170px;
+  margin-top: 30px;
+}

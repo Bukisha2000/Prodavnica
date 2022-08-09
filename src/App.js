@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Login from './Login';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ProtectedRouta from './ProtectedRouta';
+import Prodavnica from './Prodavnica';
+import ProtectedSecond from './ProtectedSecond';
+import IzborPage from './IzborPage';
+import Korpa from './Korpa';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    <Routes>
+      <Route element={<ProtectedRouta />}>
+          <Route element={<Login/>} path="/" />
+          
+      </Route>
+    <Route element={<ProtectedSecond/>}>
+    <Route element={<IzborPage/>} path='/izbor'  />
+     <Route element={<Prodavnica/>} path='/prodavnica'  />
+     <Route element={<Korpa/>} path='/korpa'/>
+    
+     </Route>
+    </Routes>
+</Router>
   );
 }
 
